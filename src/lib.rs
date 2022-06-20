@@ -1,8 +1,3 @@
-// Copyright ⓒ 2022 Porter.
-// Licensed under the MIT license
-// (see LICENSE or <http://opensource.org/licenses/MIT>) All files in the project carrying such
-// notice may not be copied, modified, or distributed except according to those terms.
-
 //! When starting a Rust command line project there are certain key features that are often required
 //! in all such projects:
 //!
@@ -117,7 +112,7 @@ fn cli() -> Command<'static> {
         .subcommand(
             Command::new("file_fail")
             .about("Show how to handle a regular filing system error e.g. file not found")
-            .arg(arg!(--better "A better rendition of the help message"))
+            .arg(arg!(--better "A better rendition of the error message"))
             .arg(arg!(<PATH> "Path to an invalid file (i.e. one that doesn't exist)").allow_invalid_utf8(true)))
 }
 
