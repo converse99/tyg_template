@@ -1,6 +1,6 @@
 [package]
 name = "tyg_template"
-version = "0.1.1"
+version = "0.1.2"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
@@ -9,8 +9,8 @@ edition = "2021"
 clap = "3.1.18"
 
 [features]
-# To help dignose errors, use the diagnose feature when compiling
+# To help diagnose errors, use the disclose feature when compiling.
 # This ensures that the source file name and line number are displayed
-# even when the bare errors would normally be displayed.
+# even when bare errors would normally be displayed.
 # usage: cargo build --features=disclose
 disclose = []
